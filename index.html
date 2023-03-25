@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form>
+      <div>
+        <label for="title-input">Title:</label>
+        <input type="text" id="title-input" />
+        <p class="error-message">This field is empty</p>
+      </div>
+      <div>
+        <label for="description-input">Description:</label>
+        <input type="text" id="description-input" />
+        <p class="error-message">This field is empty</p>
+      </div>
+      <div>
+        <button id="create-button">Create</button>
+      </div>
+    </form>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="task-list">
+        <tr>
+          <td>1</td>
+          <td>Task title Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error dolorum porro, voluptates quae alias magnam expedita cupiditate architecto vitae, minima, non optio. Error libero, unde expedita sequi tempore dolores!</td>
+          <td>Task description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, voluptate? Nam rem omnis natus fugiat vel animi laboriosam eius eum enim, numquam distinctio sapiente adipisci repellendus minima quia esse at?</td>
+          <td><input type="checkbox" name="" id=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Task title</td>
+          <td>Task description</td>
+          <td><input type="checkbox" name="" id=""></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div id="modal">
+      <h2 id="modal-title">Title</h2>
+      <p id="modal-description">Description</p>
+      <p id="modal-status"></p>
+      <button id="modal-close-button">Close</button>
+    </div>
+  </div>
+	<script src="script.js"></script>
+</body>
+</html>
